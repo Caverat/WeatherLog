@@ -1,0 +1,10 @@
+{
+    "name": "weather-log-service",
+    "version": "1.0.0",
+    "description": "A REST service to save and get weather data.",
+    "main": "server.js",
+    "author": "Sofie Kristoffersen, Erik Kristoffersen",
+    "dependencies": {
+        "express": "^4.16.4"
+    }
+}
