@@ -3,8 +3,16 @@
     "version": "1.0.0",
     "description": "A REST service to save and get weather data.",
     "main": "server.js",
+    "scripts": {
+        "start": "nodemon server.js"
+    },
     "author": "Sofie Kristoffersen, Erik Kristoffersen",
+    "license": "GPL-3.0-or-later",
     "dependencies": {
-        "express": "^4.16.4"
+        "express": "^4.16.4",
+        "mongoose": "^5.4.11"
+    },
+    "devDependencies": {
+        "nodemon": "^1.18.10"
     }
 }
