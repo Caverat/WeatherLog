@@ -7,7 +7,7 @@
     "description": "A REST service to save and get weather data.",
     "main": "server.js",
     "scripts": {
-        "start": "nodemon server.js"
+        "dev": "nodemon server.js"
     },
     "author": "Sofie Kristoffersen, Erik Kristoffersen",
     "license": "MIT",
