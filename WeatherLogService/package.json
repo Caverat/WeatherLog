@@ -7,7 +7,8 @@
     "description": "A REST service to save and get weather data.",
     "main": "server.js",
     "scripts": {
-        "dev": "nodemon server.js"
+        "dev": "nodemon server.js",
+        "deploy": "cd.. && git subtree push --prefix WeatherLogService heroku master"
     },
     "author": "Sofie Kristoffersen, Erik Kristoffersen",
     "license": "MIT",
