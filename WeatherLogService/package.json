@@ -1,6 +1,9 @@
 {
     "name": "weather-log-service",
     "version": "1.0.0",
+    "engines": {
+        "node": "10.15.0"
+    },
     "description": "A REST service to save and get weather data.",
     "main": "server.js",
     "scripts": {

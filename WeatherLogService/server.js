@@ -7,7 +7,9 @@ var express = require("express"),
     bodyParser = require('body-parser');
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/WeatherLogDB', { useNewUrlParser: true });
+var dev_db_url = 'mongodb://localhost/WeatherLogDB';
+var db_url = process.env.MONGODB_URI || dev_db_url;
+mongoose.connect(db_url, { useNewUrlParser: true });
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
