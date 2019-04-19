@@ -12,8 +12,8 @@ exports.list_all_weather_logs = function (req, res) {
 };
 
 exports.create_weather_log = function (req, res) {
+    req.body.sensorId = mongoose.Types.ObjectId(req.body.sensorId);
     var new_weather_log = new WeatherLog(req.body);
-    new_weather_log.
     new_weather_log.save(function (err, weatherLog) {
         if (err)
             res.status(422).send(err);
