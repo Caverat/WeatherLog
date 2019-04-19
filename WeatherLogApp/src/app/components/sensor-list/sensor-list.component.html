@@ -1,3 +1,10 @@
-<p>
-  sensor-list works!
-</p>
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Sensorer</mat-card-title>
+  </mat-card-header>
+  <mat-nav-list role="list">
+    <mat-list-item role="listitem" *ngFor="let sensor of sensors">
+      <a matLine routerLink="/sensor/{{sensor._id}}">{{sensor.name}}</a>
+    </mat-list-item>
+  </mat-nav-list>
+</mat-card>

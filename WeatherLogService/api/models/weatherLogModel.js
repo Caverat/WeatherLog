@@ -4,7 +4,7 @@ var Schema = mongoose.Schema;
 
 var WeatherLogSchema = new Schema({
     sensorId: {
-        type: String        
+        type: Schema.Types.ObjectId        
     },
     timestamp: {
         type: Date,
